@@ -22,15 +22,14 @@
     margin-right: 5px;
     background: white;
     border: 1px solid white;
-
     &:hover,
-    &:active {
+    &.active {
       border-color: burlywood;
     }
   }
 
   & .clear-completed-btn {
-    visibility: visible;
+    visibility: hidden;
     &.visible {
       visibility: visible;
     }
