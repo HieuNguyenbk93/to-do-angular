@@ -8,6 +8,8 @@ import { TodoInputComponent } from './components/todo-input/todo-input.component
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { TypingSearchComponent } from './components/typing-search/typing-search.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { FormsModule } from '@angular/forms';
     TodoItemComponent,
     TodoInputComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    TypingSearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

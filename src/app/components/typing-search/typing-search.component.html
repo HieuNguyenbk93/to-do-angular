@@ -1,0 +1,8 @@
+<p>IMDB Movie Typeahead Search..</p>
+<form>
+  <input type="text" placeholder="Typing name..." class="form-control"
+    [(ngModel)]="contentSearch" name="contentSearch" (keyup)="onSubmit()"
+  >
+</form>
+<p>Term- {{term$|async}}</p>
+<pre>{{results$|async|json}}
